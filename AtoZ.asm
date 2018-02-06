@@ -9,8 +9,8 @@ imprime:
 	add al,1
 	int 0x10
 	cmp al,'Z'
-	jz fim 		;se(al == Z) salta para "fim"
-	jmp imprime	;'else' salta para "imprime"
+	jz fim 		;se(al == 'Z') => salta para "fim"
+	jmp imprime	;else => salta para "imprime"
 fim:
 	times 510-($-$$) db 0
 	dw 0xaa55
