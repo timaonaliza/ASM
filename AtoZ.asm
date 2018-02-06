@@ -1,4 +1,4 @@
-;Imprime as letras de A até Z
+;Imprime as letras de 'A' até 'Z'
 BITS 16
 inicio:
 	mov ah,0x0e
